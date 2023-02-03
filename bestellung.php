@@ -24,10 +24,9 @@
 $bnr = $_GET["bnr"];
 echo "<h1>iBrot-Bestellung</h1>";
 echo "<h2>Bestellnummer: $bnr </h2>";
-
+$your_password_here = "Qwertz123$Qwertz123$"
 // PHP Data Objects(PDO) Sample Code:
 try {
-    $your_password_here = "Qwertz123$Qwertz123$"
     $conn = new PDO("sqlsrv:server = tcp:rap-ibrot-dbsrv.database.windows.net,1433; Database = ibrot", "rap", "{$your_password_here}");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
