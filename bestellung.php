@@ -79,6 +79,9 @@ while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC))
 }
 echo "</table>";
 echo "<tbody>";
+/* Free statement and connection resources. */
+sqlsrv_free_stmt( $stmt);
+sqlsrv_close( $conn);
 
 ?> <!-- Ende PHP-->
 </body> <!-- Ende HTML-Body-->
